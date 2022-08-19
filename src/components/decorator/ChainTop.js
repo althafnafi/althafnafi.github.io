@@ -3,7 +3,7 @@ import React from "react";
 const ChainTop = () => {
     return (
         <div className="pt-20 pb-2 px-1">
-            <svg height="2em" width="2em">
+            <svg height="1.8em" width="2em">
                 <circle cx="0.8em" cy="1em" r="0.5em" fill="none" stroke="white" stroke-width="2" />
             </svg>
             <svg height="10" width="20">
