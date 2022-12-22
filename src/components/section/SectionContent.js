@@ -8,7 +8,7 @@ const SectionContent = ({ data }) => {
             <h2 id={id} className="font-bold">
                 <span className="text-teal-400">{title}</span>
             </h2>
-            <p className="text-sm pl-2.5 pb-2 lg:w-2/3">
+            <p className="text-sm pl-2.5 pb-2 lg:w-1/2">
                 {content}
             </p>
         </section>

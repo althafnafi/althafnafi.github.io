@@ -1,6 +1,14 @@
 import React from "react";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
+
 
 const ChainBottom = () => {
+    useEffect(() => {
+        AOS.init({duration: 500});
+    }, []);
+
     return (
         <div className="pt-2 pb-5em pl-0">
             <svg height="10" width="20">

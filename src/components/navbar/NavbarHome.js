@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarHome = () => {
     return (
-        <nav className=" px-2 py-4 rounded-none font-mono">
+        <nav className=" px-10 py-4 rounded-none font-mono">
             <div className="container flex flex-wrap justify-between items-center mx-auto">
                 <a href="/" className="flex items-center">
                     <span className="group self-center text-2xl font-semibold whitespace-nowrap dark:text-white ml-2">
@@ -11,7 +11,7 @@ const NavbarHome = () => {
                     </span>
                 </a>
                 <button className="block lg:hidden">
-                    <svg className="w-8 h-8" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
+                    <svg className="w-12 h-12" aria-hidden="true" fill="white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clipRule="evenodd"></path></svg>
                     {/* <svg viewBox="0 0 80 80" width="40" height="40" fill="white">
                         <rect width="80" height="12"></rect>
                         <rect y="25" width="80" height="12"></rect>
@@ -26,12 +26,12 @@ const NavbarHome = () => {
                             </a>
                         </li>
                         <li>
-                            <a href="" className="hover:text-teal-300">
+                            <a href="/" className="hover:text-teal-300">
                                 .contact()
                             </a>
                         </li>
                         <li>
-                            <a href="" className="hover:text-teal-300">
+                            <a href="/" className="hover:text-teal-300">
                                 .portofolio()
                             </a>
                         </li>

@@ -3,26 +3,33 @@ import ChainTop from "../decorator/ChainTop";
 import SectionContent from "./SectionContent";
 import Chain from "../decorator/Chain";
 import ChainBottom from "../decorator/ChainBottom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+import { useEffect } from "react";
 
 const sectionData = [
     {
-        id: 'do',
-        title: '.what_i_do()',
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum aspernatur reprehenderit eligendi voluptatum itaque, eos laudantium vero dolore sunt consequuntur! Debitis voluptatem quia explicabo consequatur inventore eaque eius quis! Voluptas earum molestias est ratione molestiae, voluptatibus tenetur.Dolore voluptates quidem maiores consequatur molestias excepturi, nesciunt ad libero necessitatibus.Vero eligendi qui nisi rem eum eius tempora a nemo doloribus.Itaque tempore sapiente cum veniam vel.Ratione dolorem esse recusandae illum, excepturi earum impedit placeat, commodi beatae fuga maiores qui nemo cum rerum culpa alias similique molestiae animi, dicta quae!"
-    },
-    {
         id: 'about',
-        title: '.about()',
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum aspernatur reprehenderit eligendi voluptatum itaque, eos laudantium vero dolore sunt consequuntur! Debitis voluptatem quia explicabo consequatur inventore eaque eius quis! Voluptas earum molestias est ratione molestiae, voluptatibus tenetur.Dolore voluptates quidem maiores consequatur molestias excepturi, nesciunt ad libero necessitatibus.Vero eligendi qui nisi rem eum eius tempora a nemo doloribus.Itaque tempore sapiente cum veniam vel.Ratione dolorem esse recusandae illum, excepturi earum impedit placeat, commodi beatae fuga maiores qui nemo cum rerum culpa alias similique molestiae animi, dicta quae!"
+        title: '.what_i_do()',
+        content: "Currently trying my best to survive as a full time student at Universitas Indonesia majoring in Computer Engineering. I am also a part of an amazing robotics team, AMV, which competes in Autonomus Marine Vehicles Competitions."
     },
     {
-        id: 'history',
-        title: '.history()',
-        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum aspernatur reprehenderit eligendi voluptatum itaque, eos laudantium vero dolore sunt consequuntur! Debitis voluptatem quia explicabo consequatur inventore eaque eius quis! Voluptas earum molestias est ratione molestiae, voluptatibus tenetur.Dolore voluptates quidem maiores consequatur molestias excepturi, nesciunt ad libero necessitatibus.Vero eligendi qui nisi rem eum eius tempora a nemo doloribus.Itaque tempore sapiente cum veniam vel.Ratione dolorem esse recusandae illum, excepturi earum impedit placeat, commodi beatae fuga maiores qui nemo cum rerum culpa alias similique molestiae animi, dicta quae!"
-    }
+        id: 'hobbies',
+        title: '.hobbies()',
+        content: "Try out cool tech and learn new things."
+    },
+    // {
+    //     id: 'history',
+    //     title: '.history()',
+    //     content: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo cum aspernatur reprehenderit eligendi voluptatum itaque, eos laudantium vero dolore sunt consequuntur! Debitis voluptatem quia explicabo consequatur inventore eaque eius quis! Voluptas earum molestias est ratione molestiae, voluptatibus tenetur.Dolore voluptates quidem maiores consequatur molestias excepturi, nesciunt ad libero necessitatibus.Vero eligendi qui nisi rem eum eius tempora a nemo doloribus.Itaque tempore sapiente cum veniam vel.Ratione dolorem esse recusandae illum, excepturi earum impedit placeat, commodi beatae fuga maiores qui nemo cum rerum culpa alias similique molestiae animi, dicta quae!"
+    // }
 ];
 
 const SectionLanding = () => {
+    useEffect(() => {
+        AOS.init({duration: 500});
+    }, []);
+
     return (
         <section className="font-mono">
             <div className="max-w-screen-xl px-10 pt-10 mx-auto">
@@ -40,7 +47,7 @@ const SectionLanding = () => {
                         </h2>
                         <h3 className="mt-3 font-bold text-white text-xl md:text-2xl">
                             <span className="text-teal-400">print</span>
-                            <i>(althaf.about())</i>
+                            <i>(althaf.about)</i>
                         </h3>
 
                         <p className="mt-2 text-white">
@@ -87,7 +94,7 @@ const SectionLanding = () => {
                         </div>
                     );
                 })}
-                <ChainBottom />
+                <ChainBottom data-aos="ease-in"/>
             </div>
             {/* <img
                 className="absolute inset-y-0 right-"
