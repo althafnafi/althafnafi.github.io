@@ -12,7 +12,7 @@ const App = () => {
     <>
       <NavbarHome />
       <SectionLanding />
-      <Footer data-aos="ease-in" />
+      <Footer />
     </>
   );
 };

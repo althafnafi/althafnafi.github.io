@@ -10,13 +10,13 @@ import { useEffect } from "react";
 const sectionData = [
   {
     id: "about",
-    title: ".what_i_do()",
+    title: ".what_i_do",
     content:
       "Currently trying my best to survive as a full time student at Universitas Indonesia majoring in Computer Engineering. I'm also a part of an amazing robotics team, AMV, which competes in Autonomus Marine Vehicles' Competitions.",
   },
   {
     id: "hobbies",
-    title: ".hobbies()",
+    title: ".hobbies",
     content: "Try out cool tech and learn new things.",
   },
   // {
@@ -28,7 +28,10 @@ const sectionData = [
 
 const SectionLanding = () => {
   useEffect(() => {
-    AOS.init();
+    AOS.init({
+      once: true,
+      duration: 500,
+    });
   }, []);
 
   return (
@@ -94,7 +97,7 @@ const SectionLanding = () => {
             </div>
           );
         })}
-        <ChainBottom data-aos="ease-in" />
+        <ChainBottom />
       </div>
       {/* <img
                 className="absolute inset-y-0 right-"
