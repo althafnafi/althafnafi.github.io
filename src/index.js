@@ -1,22 +1,21 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom/client";
 
-import './index.css';
+import "./index.css";
 
-import SectionLanding from './components/section/SectionLanding';
-import NavbarHome from './components/navbar/NavbarHome';
-import Footer from './components/footer/Footer';
+import SectionLanding from "./components/section/SectionLanding";
+import NavbarHome from "./components/navbar/NavbarHome";
+import Footer from "./components/footer/Footer";
 
 const App = () => {
   return (
     <>
       <NavbarHome />
       <SectionLanding />
-      <Footer />
+      <Footer data-aos="ease-in" />
     </>
   );
 };
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(<App />);
-
