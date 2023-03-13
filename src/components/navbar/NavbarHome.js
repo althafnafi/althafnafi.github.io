@@ -7,7 +7,7 @@ const NavbarHome = () => {
         <a href="/" className="flex items-center">
           <span className="group self-center text-2xl font-semibold whitespace-nowrap text-white ml-2">
             <span className="text-teal-400 group-hover:underline">althaf</span>
-            .nafi()
+            nafi
           </span>
         </a>
         <button className="block md:hidden">
@@ -34,17 +34,31 @@ const NavbarHome = () => {
           <ul className="flex flex-row gap-3 md:gap-6 text-white">
             <li>
               <a href="#about" className="hover:text-teal-300">
-                .about()
+                .about
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-teal-300">
-                .contact()
+              <a
+                href="https://links.althaf.tech"
+                className="hover:text-teal-300"
+              >
+                .links
               </a>
             </li>
             <li>
-              <a href="/" className="hover:text-teal-300">
-                .portofolio()
+              <a
+                href="https://work.althaf.tech"
+                className="hover:text-teal-300"
+              >
+                .work
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://blog.althaf.tech"
+                className="hover:text-teal-300"
+              >
+                .blog
               </a>
             </li>
           </ul>
