@@ -36,7 +36,7 @@ const SectionLanding = () => {
 
   return (
     <section className="font-mono">
-      <div className="max-w-screen-xl px-10 pt-10 mx-auto">
+      <div className="max-w-screen-xl px-10 sm:px-20 pt-10 mx-auto">
         <ChainTop />
         <div className="grid grid-cols-1 gap-8 lg:gap-16 lg:grid-cols-2">
           {/* <div

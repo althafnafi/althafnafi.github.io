@@ -2,7 +2,7 @@ import React from "react";
 
 const NavbarHome = () => {
   return (
-    <nav className=" px-8 py-4 lg:px-12 rounded-none font-mono">
+    <nav className=" px-8 py-4 lg:px-20 rounded-none font-mono">
       <div className="flex justify-between">
         <a href="/" className="flex items-center">
           <span className="group self-center text-2xl font-semibold whitespace-nowrap text-white ml-2">
@@ -39,7 +39,7 @@ const NavbarHome = () => {
             </li>
             <li>
               <a
-                href="https://links.althaf.tech"
+                href="https://links.althafnafi.com"
                 className="hover:text-teal-300"
               >
                 .links
@@ -47,7 +47,7 @@ const NavbarHome = () => {
             </li>
             <li>
               <a
-                href="https://work.althaf.tech"
+                href="https://work.althafnafi.com"
                 className="hover:text-teal-300"
               >
                 .work
@@ -55,7 +55,7 @@ const NavbarHome = () => {
             </li>
             <li>
               <a
-                href="https://blog.althaf.tech"
+                href="https://blog.althafnafi.com"
                 className="hover:text-teal-300"
               >
                 .blog
